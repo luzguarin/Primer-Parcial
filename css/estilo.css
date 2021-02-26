@@ -1,0 +1,167 @@
+/* Patrones globales del CSS */
+/* Títulos, enlaces y botones */
+h1, h2, h3, h4, h5, a, p, button, span { font-family: 'Rubik', sans-serif; }
+
+/* Subtítulos, Párrafos, Formularios y otras etiquetas de textos */
+h6, form, input, select, textarea, option, table, tr, th, td, div, strong, em { font-family: 'Akaya Telivigala', sans-serif; }
+
+/* Asignar diseplay: block; a todas las cajas de estructura */
+header, main, footer, aside, section, figure, nav, figcaption, div { display: block; }
+
+/* Anular margen por defecto de body */
+body { margin: 0 !important }
+
+
+/* Estilo propio */
+
+/* Componente Menú Móviles */
+aside#menu-movil { width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; top: 0; right: -290px; z-index: 99999; background:rgb(137, 182, 87, 0.97); }
+
+aside#menu-movil a#abrir { width: 40px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 25px; left: -40px; z-index: 99996; background:rgb(137, 182, 87); color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; border-radius: 5px 0px 0px 5px; }
+aside#menu-movil a#abrir:hover { background: #ff00c0; transition: all 0.3s ease-in; }
+
+aside#menu-movil a#cerrar { width: 40px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 25px; left: -40px; z-index: 99996; background:rgb(137, 182, 87); color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; border-radius: 5px 0px 0px 5px; }
+aside#menu-movil a#cerrar:hover { background: #ff00c0; transition: all 0.3s ease-in; }
+
+aside#menu-movil nav { width: 70%; height: auto; display: block; margin: 40px auto 0 auto; float: none; position: relative; }
+aside#menu-movil nav a { width: 100%; height: auto; display: block; margin: 0 auto 25px; float: none; position: relative; color: #fff; text-decoration: none; transition: all 0.3s ease-in; }
+aside#menu-movil nav a:hover { color: #999; transition: all 0.3s ease-in; }
+
+
+/* Componente: HEADER */
+header { width: 100%; height: 100px; position: fixed; top: 35px; right: 75px; z-index: 99998; margin: 0; float: none; background: #fff; box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2); border-radius: 8px; }
+header article { width: 90%; height: 100px; position: relative; margin: 0 auto; float: none; }
+header article a { width: 189px; height: 60px; display: block; position: relative; margin: 0 0 0 40px; float: left; top: 20px; left: 50px; }
+header article a img { width: auto; height: 60px; display: block; position: relative; margin: 0 auto; float: none; }
+
+header article nav { width: 600px; height: 50px; display: block; position: relative; margin: 25px 0 0; float: right; left: 10px }
+header article nav a { width: auto; height: auto; display: block; position: relative; margin:  0 11px; float: left; color:rgb(137, 182, 87); text-decoration: none; font-weight: 600; font-size: 1em; line-height: 1em; padding:  17px 0; top: 0}
+header article nav a:last-child { width: auto; height: auto; display: block; position: relative; margin: 0 0 0 50px; float: left; color: white; background:rgb(137, 182, 87); text-decoration: none; font-weight: 600; font-size: 0.8em; line-height: 1.2em; padding: 14px 25px; border-radius: 25px; transition: all 0.3s ease-in; top: 3px; }
+header article nav a:hover { color:rgb(18, 234, 72); border-bottom: solid 1px rgb(18, 234, 72); transition: all 0.3s ease-in }
+header article nav a:hover:last-child { color: #fff; background: rgb(18, 234, 72) ; border-bottom: none; transition: all 0.3s ease-in }
+
+/* Componente: Contenedor MAIN */
+main { width: 100%; height: 2108px; min-height: auto; position: relative; margin: 100px auto 0 auto; float: none; top: 35px; }
+
+
+/* Componente: Seccion "presentacion" */
+main section#presentacion { width: 100%; height: 900px; position: relative; margin: 0 auto; float: none; background:rgba(137, 182, 87, 0.10); top: -135px; }
+
+main section#presentacion div#ancla-home { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; top: -100px; left: 0; }
+
+main section#presentacion article { width: 100%; height: 100%; position: relative; margin: 0 auto; float: none; top: 0; }
+main section#presentacion article div#textos-presentacion { width: 100%; height: auto; position: relative; margin: 0; float: left; text-align: center}
+main section#presentacion article div#textos-presentacion h4 { font-size: 1.2em; color: rgb(137, 182, 87); font-weight: 700; line-height: 1em; margin: 0px; padding: 230px 0 15px; letter-spacing: -0.015em; }
+main section#presentacion article div#textos-presentacion h1 { width: 650px; font-size: 3.6em; color: rgb(41, 54, 26); font-weight: 800; line-height: 1em; margin: 0 auto; padding: 0 0 15px; letter-spacing: -0.015em; }
+main section#presentacion article div#textos-presentacion h1 span { color:rgb(137, 182, 87)}
+main section#presentacion article div#textos-presentacion a { width: 120px; height: auto; display: block; position: relative; margin: 10px auto; float: none; color: white; background:rgb(137, 182, 87); text-decoration: none; font-weight: 600; font-size: 0.8em; line-height: 1.2em; padding: 14px 25px; border-radius: 25px; transition: all 0.3s ease-in;}
+main section#presentacion article div#textos-presentacion a:hover { background: rgb(18, 234, 72); transition: all 0.3s ease-in; }
+
+main section#presentacion article figure { width: 100%; height: auto; position: relative; margin: 0 auto; float: left; top: ; }
+/* main section#presentacion article figure:nth-child(2) { width: 100%; margin: 0 auto; height: auto; top: -443px; } */
+main section#presentacion article figure img { width: 50%; height: auto; position: relative; float: none; margin: 0 auto; display: block; top: 0;  }
+/* main section#presentacion article figure:last-child img{ width: 50%; height: auto; position: relative; float: none; margin: 0 auto; display: block; } */
+
+
+/* Componente: Seccion "servicios" */
+main section#food { width: 100%; height: 680px; position: relative; margin: 90px auto; float: none; background: #fff; }
+
+main section#food div#ancla-food { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; top: -100px; left: 0; }
+
+main section#food article { width: 100%; height: 700px; position: relative; margin: 0 auto; float: none; }
+main section#food article div { width: 100%; height: 250px; margin: 0 0 70px; position: relative; top: ; }
+main section#food article div h6 { text-align: center; font-size: 1.5em; color:rgb(137, 182, 87); margin: 0 auto; position: relative; top:; }
+main section#food article div h1 { text-align: center; font-size: 3em; color:rgb(41, 54, 26); margin: 0 auto; letter-spacing: -0.03em; position: relative; top: ; }
+main section#food article figure { width: 366px; height: 380px; position: relative; margin: 0 0 0 63px; float: left; display: inline-block; top: ; }
+/* main section#food article figure:first-child { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; display: block; top: ; left: ; } */
+/* main section#food article figure:first-child img { width: 100%; height: auto; } */
+main section#food article figure img { width: auto; height: 300px; position: relative; margin: 0 auto 10px; float: none; display: block; border-radius: 7px; }
+main section#food article figure:nth-child(3) img { width: auto; height: 370px; bottom: 30px; }
+main section#food article figure h5 { font-size: 1.4em; font-weight: 500; line-height: 1em; margin: 0px 84px; padding: 15px 0 10px; letter-spacing: -0.015em; text-align: center; top: -85px ; position: relative; background: #fff; width: 200px; border-radius: 7px; }
+main section#food article figure:nth-child(3) h5 { top: -155px ; }
+/* main section#food article figure:last-child { width: 100%;  } */
+/* main section#food article figure:last-child img { width: 100%; height: auto; position: relative; margin: 0 auto; float: left; display: inline-block; top: ; left: ; } */
+
+main section#free {  }
+main section#free div#ancla-shop { top: -135px; position: relative; }
+main section#free article { width: auto; height: 354px;  }
+main section#free article figure { width: auto; margin: 0 auto; height: 354px }
+main section#free article figure img { width: 100%; top: ; position: relative; }
+main section#free article figure h3 { position: relative; top: -310px ; left: 74px ; margin: 0 auto; font-size: 2.5em; color:#fff}
+main section#free article figure h3 span {font-size: 2.3em}
+main section#free article figure h2 { position: relative; top: -332px; left: 70px; font-size: 5em; margin: 0 auto; color:rgb(137, 182, 87)}
+main section#free article figure a { position: relative; top: -312px ; left: 70px; width: auto; height: auto; display: block; position: relative; margin: 0; float: left; color: white; background:rgb(137, 182, 87); text-decoration: none; font-weight: 600; font-size: 0.7em; line-height: 1em; padding: 14px 25px; border-radius: 25px; transition: all 0.3s ease-in;}
+main section#free article figure a:hover {color: #fff; background:rgb(18, 234, 72)}
+
+/* Componente: FOOTER */
+footer { width: 100%; height: 400px; position: relative; margin: 0; float: none; background: rgba(137, 182, 87, 0.10); display: block; top: 41px;}
+footer div#ancla-contact { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; top: -100px; left: 0; }
+footer article { width: 100%; height: auto; position: relative; margin: 0 auto ; float: none}
+footer article div#top-footer { width: 100%; height: 220px; position: relative; margin: 0 auto ; float: none; top: 100px;  }
+
+footer article div#top-footer nav#last-logo {  }
+footer article div#top-footer nav#last-logo img { margin: 0 auto; width: 105px; height: auto; display: block }
+
+footer article div#top-footer nav#last-text {  }
+footer article div#top-footer nav#last-text p { text-align: center; color: #777; font-size: 0.85em }
+
+footer article hr.rounded { color: #9999991c; top: 65px; position: relative; width: 80%; }
+
+footer article div#bottom-footer { width: 100%px; height: 50px; position: relative; margin: 95px 450px 0 450px; float: none; }
+footer article div#bottom-footer nav#redes { height: auto; width: 100%; margin: 0 auto; float: none; position: relative; left: 123px; }
+footer article div#bottom-footer nav#redes a { width: 40px; height: auto; display: block; margin: 5px; float: left; color: white; text-align: center; font-size: 1.3em; padding: 7px 0; transition: all 0.3s ease-in; background: #3b5999; border-radius: 25px; }
+footer article div#bottom-footer nav#redes a:nth-child(2) { background: #55adef; }
+footer article div#bottom-footer nav#redes a:nth-child(3) { background: #3f729b; }
+footer article div#bottom-footer nav#redes a:nth-child(4) { background: #ce201f; }
+
+
+
+/* Zona de Media Queries para responsive */
+
+/* Ajustes Tablets */
+@media only screen and (max-width: 1199px){
+    header article { width: 90% }
+    header article a { margin: 0 auto; float: none }
+    header article nav { display: none }
+
+    aside#menu-movil { display: block; }
+
+    main section#presentacion { height: auto }
+    main section#presentacion article { width: 80%; height: auto }
+    main section#presentacion article figure{ width: 100%; height: auto; float: none; margin: 0 auto}
+    main section#presentacion article figure img{ width: auto; height: 250px; top: 45px }
+    main section#presentacion article div#textos-presentacion { width: 100%; height: auto; margin: 0 auto; float: none }
+    main section#presentacion article div#textos-presentacion h4 { text-align: center}
+    main section#presentacion article div#textos-presentacion h1 { text-align: center; }
+
+    main section#food article figure { width: 366px; height: 380px; position: relative; margin: 0 auto ; float: left; display: inline-block; top: ; }
+
+    main section#free article figure h3 { position: relative; top: -310px ; left: 74px ; margin: 0 auto; font-size: 2.5em; color:#fff;}
+    main section#free article figure h3 span {font-size: 2.3em}
+    main section#free article figure h2 { position: relative; top: -332px; left: 70px;  font-size: 5em; margin: 0 auto; color:rgb(137, 182, 87);}
+    main section#free article figure a { position: relative; top: -312px ; left: 70px;  width: auto; height: auto; display: block; position: relative; margin: 0; float:  left; color: white; background:rgb(137, 182, 87); text-decoration: none;  font-weight: 600; font-size: 0.7em; line-height: 1em; padding: 14px 25px;  border-radius: 25px; transition: all 0.3s ease-in;}
+
+    footer article { width: 80%; height: auto }
+    footer article div#top-footer { width: 100% ; height: auto}
+    footer article div#top-footer div.cajas-footer { margin: 0 auto; float: none; }
+    footer article div#top-footer div.cajas-footer:last-child { margin: 0 auto; height: 100px; }
+
+    footer article div#bottom-footer { width: 100%; }
+
+
+}
+
+@media only screen and (max-width:799px){
+    main section#presentacion article div#textos-presentacion h1 { width: 400px; font-size: 3.6em; color: rgb(41, 54, 26); font-weight: 800; line-height: 1em; margin: 0 auto; padding: 0 0 15px; letter-spacing: -0.015em; }
+
+}
+  
+/* Ajustes Moviles */
+@media only screen and (max-width: 499px){
+    header article a { margin: 0 auto; float:left }
+    
+}
+
+@media only screen and (max-width: 399px){
+
+}
